@@ -1,0 +1,81 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/login-back3.jpg);
+  background-size: cover;
+}
+
+.login-overlay{
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+z-index: 50;
+background-color: #16171885;
+}
+
+.login__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 51;
+}
+
+.login-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.email,
+.password {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 7px 31px;
+  position: relative;
+  color: white;
+}
+
+.email::placeholder,
+.password::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.email::before{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url(./images/user.svg);
+    z-index: 10;
+}
+
+.login-btn {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 120px;
+  color: #0d75ff;
+  border: none;
+}
+
+.login-btn:hover{
+    cursor: pointer;
+}

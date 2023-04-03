@@ -1,0 +1,255 @@
+
+
+.sort-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-btn:hover{
+    cursor: pointer;
+}
+
+.sort-btn::before{
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url(./images/order-icon.svg);
+    position: absolute;
+}
+
+.hero-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hero-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.6%;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.list-item {
+  background: #f8fafd;
+  border-radius: 4px;
+  padding: 15px 10px;
+}
+
+.list-body__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  max-height: 52px;
+  overflow: hidden;
+}
+
+.list-body__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+.hero-cards {
+  display: grid;
+  gap: 33px;
+  grid-template-columns: repeat(3, 1fr);
+  transition: all 0.4s ease;
+}
+
+.hero-card{
+    height: 500px;
+    display: grid;
+    align-items: center;
+}
+
+.card-img{
+    height: 200px;
+}
+
+.card-body {
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 2px;
+
+  max-height: 80px;
+  overflow: hidden;
+}
+
+.card-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+
+  max-height: 80px;
+  overflow: hidden;
+}
+
+.card-buttons {
+  display: grid;
+  gap: 6px;
+  grid-template-areas:
+    "bookmark more"
+    "read read";
+}
+
+.bookmark-btn {
+  grid-area: bookmark;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.more-btn {
+  grid-area: more;
+  background: rgba(13, 117, 255, 0.05);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0d75ff;
+}
+
+.read-btn {
+  grid-area: read;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.pages {
+  column-gap: 8px;
+}
+
+.page {
+  background: #ffffff;
+  border: 1px solid #dfe3e8;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #212b36;
+}
+
+.page:hover{
+    cursor: pointer;
+}
+
+.active-page {
+  border: 1px solid #0d75ff;
+  color: #0d75ff;
+}
+
+.first-page {
+  transform: rotate(180deg);
+}
+
+.inactive-page{
+    background: #919EAB;
+    opacity: 0.5;
+}
+
+
+.read-book:hover{
+  opacity: 0.6;
+}
+
+.delete-book:hover{
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* Modal styles */
+
+.modal-btn{
+  width: 160px;
+}
+
+.modal-inner{
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 50;
+}
+
+.overlay{
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 25;
+  width: 100vw;
+  height: 100vw; 
+}
+
+.modal-header{
+  background: #F8FAFD;
+  margin-bottom: 21px;
+}
+
+.description{
+  /* margin-top: 10px; */
+  font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 170.3%;
+color: #58667E;
+}
+
+
+.modal-info{
+  font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 17px;
+
+color: #222531;
+}
+
+.value{
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #0D75FF;
+background: rgba(13, 117, 255, 0.09);
+border-radius: 30px;
+margin-right: 5px;
+padding: 5px 12px;
+}
+
+.exit-modal:hover{
+opacity: 0.7;
+cursor: pointer;
+}
